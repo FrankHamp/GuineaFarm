@@ -15,7 +15,7 @@ import java.util.ArrayList;
 
 public class GuineaPigFileHandler {
 
-    private static final String FILE_NAME = "GuineaFarm/guineapigs.csv";
+    private static final String FILE_NAME = "GuineaFarm/util/guineapigs.csv";
 
     public ArrayList<GuineaPig> loadPigs() {
 

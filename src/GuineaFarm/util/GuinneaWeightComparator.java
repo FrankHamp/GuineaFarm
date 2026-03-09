@@ -1,4 +1,4 @@
-package GuineaFarm;
+package GuineaFarm.util;
 
 import GuineaFarm.model.GuineaPig;
 
