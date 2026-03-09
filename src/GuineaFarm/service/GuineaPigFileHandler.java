@@ -3,7 +3,6 @@ package GuineaFarm.service;
 import GuineaFarm.model.GuineaPig;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.List;
 
 /*
  This class handles all file operations.
@@ -16,11 +15,11 @@ import java.util.List;
 
 public class GuineaPigFileHandler {
 
-    private static final String FILE_NAME = "guineapigs.csv";
+    private static final String FILE_NAME = "GuineaFarm/guineapigs.csv";
 
     public ArrayList<GuineaPig> loadPigs() {
 
-        List<GuineaPig> pigs = new ArrayList<>();
+        ArrayList<GuineaPig> pigs = new ArrayList<>();
 
         try {
 
@@ -61,7 +60,6 @@ public class GuineaPigFileHandler {
     public void savePigs(ArrayList<GuineaPig> pigs) {
 
         try {
-
             BufferedWriter writer =
                     new BufferedWriter(new FileWriter(FILE_NAME));
 
@@ -78,8 +76,8 @@ public class GuineaPigFileHandler {
                 */
 
                 // STUDENT CODE HERE
-
-
+                writer.write(pig.toString());
+                //writer.write(pig.getName() + pig.getAge() + pig.getWeight() + pig.getBreed() + pig.getColor());
                 writer.newLine();
             }
 
