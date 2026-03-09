@@ -1,7 +1,6 @@
 package GuineaFarm.service;
 
-import Lesson17.GuineaFarm.model.*;
-
+import GuineaFarm.model.GuineaPig;
 import java.io.*;
 import java.util.ArrayList;
 
