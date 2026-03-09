@@ -3,6 +3,7 @@ package GuineaFarm.service;
 import GuineaFarm.model.GuineaPig;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 
 /*
  This class handles all file operations.
@@ -19,7 +20,7 @@ public class GuineaPigFileHandler {
 
     public ArrayList<GuineaPig> loadPigs() {
 
-        ArrayList<GuineaPig> pigs = new ArrayList<>();
+        List<GuineaPig> pigs = new ArrayList<>();
 
         try {
 

@@ -1,6 +1,8 @@
 package GuineaFarm.model;
 
-public class GuineaPig {
+import GuineaFarm.util.GuineaPigSorter;
+
+public class GuineaPig  {
 
     private String name;
     private int age;
@@ -45,4 +47,5 @@ public class GuineaPig {
                 " | breed: " + breed +
                 " | color: " + color;
     }
+
 }
